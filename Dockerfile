@@ -1,9 +1,9 @@
-FROM debian:stretch
+FROM debian:bullseye
 
 LABEL maintainer="Nadezhda Ryabtsova <nadezhdaryabtsova@gmail.com>"
 LABEL description="Provides an image with Janus Gateway"
 
-RUN echo deb http://deb.debian.org/debian stable main contrib non-free >> /etc/apt/sources.list && \
+RUN echo deb http://deb.debian.org/debian testing main contrib non-free >> /etc/apt/sources.list && \
 	apt-get update && \
 	apt-get install -y \
 		git \
