@@ -1,4 +1,4 @@
-FROM debian:bullseye
+FROM debian:stretch
 
 LABEL maintainer="Nadezhda Ryabtsova <nadezhdaryabtsova@gmail.com>"
 LABEL description="Provides an image with Janus Gateway"
